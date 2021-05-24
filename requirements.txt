@@ -4,4 +4,5 @@ Keras==2.4.3
 numpy==1.19.5
 tensorflow==2.4.1
 ChatterBot==1.0.8
-spacy==2.3.5
+spacy>=2.2.0,<3.0.0
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz#egg=en_core_web_sm
