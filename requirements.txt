@@ -3,3 +3,4 @@ Pillow==7.1.2
 Keras==2.4.3
 numpy==1.19.5
 tensorflow==2.4.1
+ChatterBot==1.0.8
