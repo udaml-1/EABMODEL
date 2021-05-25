@@ -8,11 +8,11 @@ col1, col2 = st.beta_columns([1,2])
 col1.image('Kyobi Labs.png', width=200)
 col2.title('Identificador de equipo de laboratorio')
 
-import streamlit as st
-from img_classification import teachable_machine_classification
-import keras
-from PIL import Image, ImageOps
-import numpy as np
+#import streamlit as st
+#from img_classification import teachable_machine_classification
+#import keras
+#from PIL import Image, ImageOps
+#import numpy as np
 
 st.sidebar.image('Plano.png', width=200)
 
@@ -233,81 +233,81 @@ if uploaded_file is not None:
     st.write("Varilla")
 
 
-import streamlit as st
-from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
-import pandas as pd
+#import streamlit as st
+#from chatterbot import ChatBot
+#from chatterbot.trainers import ListTrainer
+#import pandas as pd
 
 
-df = pd.read_csv('chatlab - chatlab.csv')
+#df = pd.read_csv('chatlab - chatlab.csv')
 
-input_text = st.text_input('Yo','Hola')
+#input_text = st.text_input('Yo','Hola')
 
-talk = df['bot0'].tolist()
-talk= talk + df['bot1'].tolist()
+#talk = df['bot0'].tolist()
+#talk= talk + df['bot1'].tolist()
 
-talk= talk + df['bot2'].tolist()
-talk= talk + df['bot3'].tolist()
-talk= talk + df['bot4'].tolist()
-talk= talk + df['bot5'].tolist()
-talk= talk + df['bot6'].tolist()
-talk= talk + df['bot7'].tolist()
-talk= talk + df['bot8'].tolist()
-talk= talk + df['bot9'].tolist()
-talk= talk + df['bot10'].tolist()
-talk= talk + df['bot11'].tolist()
-talk= talk + df['bot12'].tolist()
-talk= talk + df['bot13'].tolist()
-talk= talk + df['bot14'].tolist()
-talk= talk + df['bot15'].tolist()
-talk= talk + df['bot16'].tolist()
-talk= talk + df['bot17'].tolist()
-talk= talk + df['bot18'].tolist()
-talk= talk + df['bot19'].tolist()
-talk= talk + df['bot20'].tolist()
-talk= talk + df['bot21'].tolist()
-talk= talk + df['bot22'].tolist()
-talk= talk + df['bot23'].tolist()
-talk= talk + df['bot24'].tolist()
-talk= talk + df['bot25'].tolist()
-talk= talk + df['bot26'].tolist()
-talk= talk + df['bot27'].tolist()
-talk= talk + df['bot28'].tolist()
-talk= talk + df['bot29'].tolist()
-talk= talk + df['bot30'].tolist()
-talk= talk + df['bot31'].tolist()
-talk= talk + df['bot32'].tolist()
-talk= talk + df['bot33'].tolist()
-talk= talk + df['bot34'].tolist()
-talk= talk + df['bot35'].tolist()
-talk= talk + df['bot36'].tolist()
-talk= talk + df['bot37'].tolist()
-talk= talk + df['bot38'].tolist()
-talk= talk + df['bot39'].tolist()
-talk= talk + df['bot40'].tolist()
-talk= talk + df['bot41'].tolist()
-talk= talk + df['bot42'].tolist()
-talk= talk + df['bot43'].tolist()
-talk= talk + df['bot44'].tolist()
-talk= talk + df['bot45'].tolist()
-talk= talk + df['bot46'].tolist()
-talk= talk + df['bot47'].tolist()
-talk= talk + df['bot48'].tolist()
-talk= talk + df['bot49'].tolist()
-talk= talk + df['bot50'].tolist()
-talk= talk + df['bot51'].tolist()
-talk= talk + df['bot52'].tolist()
-bot = ChatBot('Robot')
+#talk= talk + df['bot2'].tolist()
+#talk= talk + df['bot3'].tolist()
+#talk= talk + df['bot4'].tolist()
+#talk= talk + df['bot5'].tolist()
+#talk= talk + df['bot6'].tolist()
+#talk= talk + df['bot7'].tolist()
+#talk= talk + df['bot8'].tolist()
+#talk= talk + df['bot9'].tolist()
+#talk= talk + df['bot10'].tolist()
+#talk= talk + df['bot11'].tolist()
+#talk= talk + df['bot12'].tolist()
+#talk= talk + df['bot13'].tolist()
+#talk= talk + df['bot14'].tolist()
+#talk= talk + df['bot15'].tolist()
+#talk= talk + df['bot16'].tolist()
+#talk= talk + df['bot17'].tolist()
+#talk= talk + df['bot18'].tolist()
+#talk= talk + df['bot19'].tolist()
+#talk= talk + df['bot20'].tolist()
+#talk= talk + df['bot21'].tolist()
+#talk= talk + df['bot22'].tolist()
+#talk= talk + df['bot23'].tolist()
+#talk= talk + df['bot24'].tolist()
+#talk= talk + df['bot25'].tolist()
+#talk= talk + df['bot26'].tolist()
+#talk= talk + df['bot27'].tolist()
+#talk= talk + df['bot28'].tolist()
+#talk= talk + df['bot29'].tolist()
+#talk= talk + df['bot30'].tolist()
+#talk= talk + df['bot31'].tolist()
+#talk= talk + df['bot32'].tolist()
+#talk= talk + df['bot33'].tolist()
+#talk= talk + df['bot34'].tolist()
+#talk= talk + df['bot35'].tolist()
+#talk= talk + df['bot36'].tolist()
+#talk= talk + df['bot37'].tolist()
+#talk= talk + df['bot38'].tolist()
+#talk= talk + df['bot39'].tolist()
+#talk= talk + df['bot40'].tolist()
+#talk= talk + df['bot41'].tolist()
+#talk= talk + df['bot42'].tolist()
+#talk= talk + df['bot43'].tolist()
+#talk= talk + df['bot44'].tolist()
+#talk= talk + df['bot45'].tolist()
+#talk= talk + df['bot46'].tolist()
+#talk= talk + df['bot47'].tolist()
+#talk= talk + df['bot48'].tolist()
+#talk= talk + df['bot49'].tolist()
+#talk= talk + df['bot50'].tolist()
+#talk= talk + df['bot51'].tolist()
+#talk= talk + df['bot52'].tolist()
+#bot = ChatBot('Robot')
 
-trainer = ListTrainer(bot)
+#trainer = ListTrainer(bot)
 
-trainer.train(talk)
+#trainer.train(talk)
 
-respuesta_del_bot = str(bot.get_response(input_text))
+#respuesta_del_bot = str(bot.get_response(input_text))
 
 
 
 col1, col2 = st.beta_columns([4,2])
 col1.image('Bot.png', width=300)
-#col2.header('¿En qué te puedo ayudar?')
-col2.header('🤖 ' + respuesta_del_bot)
+col2.header('¿En qué te puedo ayudar?')
+#col2.header('🤖 ' + respuesta_del_bot)
